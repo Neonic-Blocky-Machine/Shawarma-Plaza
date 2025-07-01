@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawarma web-plaza</title>
+    <link rel="icon" href="./images/Shawarma plaza logo.png">
+    <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/extra-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="lobby">
+        <nav class="navigation">
+            <div class="logo"><img src="./images/Shawarma plaza logo.png" class="plaza-logo" alt="">
+                <h3 class="logo-title">Shawarma Plaza</h3>
+            </div>
+            <button id="header-btn"><i class="fa fa-bars"></i></button>
+            <div id="side-bar" class="link-box">
+                <button id="close"></button>
+                <a href="#lobby" class="nav_link lobby">Lobby</a>
+                <a href="#menu" class="nav_link menu">Menu</a>
+                <a href="#footer" class="nav_link about-us">About us</a>
+                <a href="./contacts.html" class="nav_link contacts">Contacts</a>
+                <a href="./sign-in.html" class="nav_link sign-in">Sign in</a>
+            </div>
+        </nav>
+        <h1 class="main-title">WELCOME TO WEB-PLAZA</h1>
+    </header>
+
+
+
+    <main>
+        <section id="menu" class="overview">
+            <h2 class="menu-headline">Plaza Menu</h2>
+            <p class="menu-overview">Here are all of the positions that you can order right now. Try out juicy meat
+                cooked inside special electric reactor or have vegeterian dishes,
+                made purely with plants from the nature itself. In addition, there are unique West Eastern desserts that
+                are certain to decorate your meal and put colors into it while
+                our authentic drinks will boost your energy for the rest of the day.
+
+            </p>
+        </section>
+
+
+        <section class="MENU">
+            <div class="buttons">
+                <button onclick="ToggleCategory('cat1')" class="category-title primary">Meat dishes</button>
+                <button onclick="ToggleCategory('cat2')" class="category-title vegan">Vegeterian dishes</button>
+                <button onclick="ToggleCategory('cat3')" class="category-title sweets">Desserts</button>
+                <button onclick="ToggleCategory('cat4')" class="category-title refresh">Drinks</button>
+            </div>
+            <div id="cat1" class="category1">
+                <div class="meat-dishes category">
+                    <div class="dish 1">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Plaza Shawarma</h2>
+                            <p class="dish-overview">
+                                Classic plaza shawarma made of juicy components such as chicken meat,
+                                tomatoes, cabbage, onion, complemented with creamy sauce.
+                                Can be served either in <span class="serve-type">wrap</span> or
+                                on <span class="serve-type">plate</span> or
+                                in <span class="serve-type">special bread</span>.</p>
+                            <h3 class="dish-price">1800 tenge</h3>
+                        </div>
+                        <img src="./images/Plaza Shawarma.jpg" alt="Shawarma" class="dish-image">
+                    </div>
+                    <div class="dish 2">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Plaza Doner Kebab</h2>
+                            <p class="dish-overview">
+                                Special doner with roasted beef, crispy potato fries, juicy salad of cabbage, onion,
+                                dill, cilantro and savory yogurt sauce.
+                                Can be also served either in <span class="serve-type">wrap</span> or on <span
+                                    class="serve-type">plate</span> or in <span class="serve-type">special bread</span>.
+                            </p>
+                            <h3 class="dish-price">2300 tenge</h3>
+                        </div>
+                        <img src="./images/Plaza Doner.jpg" alt="Doner" class="dish-image">
+                    </div>
+                    <div class="dish 3">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Reactor Shish Kebab</h2>
+                            <p class="dish-overview">
+                                Skewered pieces of spice-marinated veal and lamb, flame-seared with ionized herbs and
+                                served on a neon-char board beside solar-roasted vegetables and garlic ember dip.
+                                Prepared either <span class="mild">mild</span> or <span class="spicy">spicy</span> or
+                                <span class="nuclear">nuclear</span>.
+                            </p>
+                            <h3 class="dish-price">3200 tenge</h3>
+                        </div>
+                        <img src="./images/Cyber Reactor Shish Kebab.jpg" alt="Shish Kebab" class="dish-image">
+                    </div>
+                    <div class="dish 4">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Reactor Adana Kebab</h2>
+                            <p class="dish-overview">
+                                A blazing fusion of finely ground lamb infused with plasma pepper paste, grilled over
+                                reactor heat and served in long sticks fuming hot.
+                                Also prepared either <span class="mild">mild</span> or <span class="spicy">spicy</span>
+                                or <span class="nuclear">nuclear</span>.
+                            </p>
+                            <h3 class="dish-price">4400 tenge</h3>
+                        </div>
+                        <img src="./images/Cyber Reactor Adana Kebab .jpg" alt="Adana Kebab" class="dish-image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat2" class="category1">
+                <div class="vegeterian category">
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Fried Salad Bowl</h2>
+                            <p class="dish-overview">A crisp mosaic of fried aubergine shards, shredded frost-cabbage,
+                                and golden potato prisms — tossed in mint oil and served in a thermal alloy bowl.</p>
+                            <h3 class="dish-price">2100 tenge</h3>
+                        </div>
+                        <img src="./images/Fried Salad Bowl.jpg" alt="Fried Salad Bowl" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Altered Chickpea Bowl</h2>
+                            <p class="dish-overview">Steamed lentils, roasted chickpeas, and sliced hyper-avocado,
+                                layered over bulgur and infused with emerald tahini drizzle and a touch of terra-lime.
+                            </p>
+                            <h3 class="dish-price">1900 tenge</h3>
+                        </div>
+                        <img src="./images/Warped Chickpea Bowl.jpg" alt="Altered Chickpea Bowl" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Vegan Synth-Blocks</h2>
+                            <p class="dish-overview">Char-seared tofu blocks glazed in golden glaze, stacked over a
+                                fresh mosaic of greeny plants.</p>
+                            <h3 class="dish-price">1600 tenge</h3>
+                        </div>
+                        <img src="./images/Vegan Synth-Blocks.jpg" alt="Vegan Synth-Blocks" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Neon Hummus Plate</h2>
+                            <p class="dish-overview">A radiant trio of beetroot, basil-bean, and citrus hummus swirls —
+                                paired with prism-cut pita chips and glow-dusted chickpeas on a pulse-lit platter.</p>
+                            <h3 class="dish-price">4200 tenge</h3>
+                        </div>
+                        <img src="./images/Neon Hummus Plate.jpg" alt="Neon Hummus Plate" class="dish-image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat3" class="category1">
+                <div class="desserts category">
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Baklava Cubes</h2>
+                            <p class="dish-overview">Diamond-cut pistachio baklava blocks layered in spiced syrup and
+                                served chilled on a glowing dessert slate with a hint of cinnamon vapor.</p>
+                            <h3 class="dish-price">3000 tenge</h3>
+                        </div>
+                        <img src="./images/Baklava Cubes.jpg" alt="Baklava Cubes" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Flavoured Kunafa</h2>
+                            <p class="dish-overview">Delicate kunafa threads crisped to golden perfection, landed on
+                                tropic syrup lake and topped with shimmer sweet cream.</p>
+                            <h3 class="dish-price">2600 tenge</h3>
+                        </div>
+                        <img src="./images/Flavoured Kunafa Cake.jpg" alt="Flavoured Kunafa" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title"> Plasma Cream Fruity Cake</h2>
+                            <p class="dish-overview">A layered starlight sponge infused with orange, strawberry, and
+                                blueberry orbs — glazed in plasma-cream frosting and crowned with a quantum fruit burst.
+                            </p>
+                            <h3 class="dish-price">3800 tenge</h3>
+                        </div>
+                        <img src="./images/Plasma Cream Fruity Cake.jpg" alt=" Plasma Cream Fruity Cake"
+                            class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Mint Galaxy Ice-Cream</h2>
+                            <p class="dish-overview">A triple-scoop swirl of galactic mint cream, frosted stardust, and
+                                pixel sugar crunch — served in a chilled glass</p>
+                            <h3 class="dish-price">1800 tenge</h3>
+                        </div>
+                        <img src="./images/Mint Galaxy Ice-Cream.jpg" alt="Mint Galaxy Ice-Cream" class="dish-image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat4" class="category1">
+                <div class="drinks category">
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Minty Mirage Lemonade</h2>
+                            <p class="dish-overview">Crushed glacier-mint leaves and solar lemon essence suspended in
+                                sparkling spring fizz, served over prism ice in a pulse-glass jug.</p>
+                            <h3 class="dish-price">2800 tenge</h3>
+                        </div>
+                        <img src="./images/Minty Mirage Lemonade.jpg" alt="Minty Mirage Lemonade" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Plasma Yogurt</h2>
+                            <p class="dish-overview">Shock-chilled yogurt infused with cardamom and citrus bloom,
+                                layered with pink salt foam and energized by a micro current of neon spice.</p>
+                            <h3 class="dish-price">1300 tenge</h3>
+                        </div>
+                        <img src="./images/Plasma Yogurt.jpg" alt="Plasma Yogurt" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Shawarmachino (Spicy Cappuccino)</h2>
+                            <p class="dish-overview">A spiced espresso fusion with cardamom crema and cinnamon vapor,
+                                finished with frothy glowmilk in a magnet-steamed cup.</p>
+                            <h3 class="dish-price">1200 tenge</h3>
+                        </div>
+                        <img src="./images/Spicy Cappucino.jpg" alt="Espresso" class="dish-image">
+                    </div>
+                    <div class="dish">
+                        <div class="dish-text">
+                            <h2 class="dish-title">Pomegranate Spark Fizz</h2>
+                            <p class="dish-overview">Cold-brewed pomegranate and lemon tonic electrified with fizz
+                                crystals and served in a translucent reactor glass with a flicker glow.</p>
+                            <h3 class="dish-price">3300 tenge</h3>
+                        </div>
+                        <img src="./images/Pomegranate Spark Fizz.jpg" alt="Pomegranate Spark Fizz" class="dish-image">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer id="footer">
+        <div class="footer">
+            <h2 class="subtitle">Shawarma Plaza</h2>
+            <h3 class="rights">All rights reserved</h3>
+            <div class="credits">
+                <div class="organiser"><img src="./images/Morrison Academy pfp.png" class="organiser-img" alt="">
+                    Organiser - Morrison Academy
+                </div>
+                <div class="contributors">
+                    <div class="footer-card">Web-site creator - Daler <img src="./images/Aether Cube.jpg" class="footer-img" alt="Daler the Cube"></div>
+                    <div class="footer-card">Creating assist - Nurdaulet <img src="./images/Nurdaulet's pfp.jpg" class="footer-img" alt=""></div>
+                    <div class="footer-card">Creating support - Amir <img src="./images/Amir's pfp.jpg" class="footer-img" alt=""></div>
+                    <div class="footer-card">Planning help, logo - GPT <img src="./images/ChatGPT pfp.png" class="footer-img" alt=""></div>
+                    <div class="footer-card">Image-generating - Shedevrum <img src="./images/Shedevrum pfp.png" class="footer-img" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

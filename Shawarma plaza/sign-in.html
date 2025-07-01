@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Registration</title>
+    <link rel="icon" href="./images/Shawarma plaza logo.png">
+    <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/extra-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="lobby">
+        <nav class="navigation">
+            <div class="logo"><img src="./images/Shawarma plaza logo.png" class="plaza-logo" alt="">
+                <h3 class="logo-title">Shawarma Plaza</h3>
+            </div>
+            <button id="header-btn"><i class="fa fa-bars"></i></button>
+            <div id="side-bar" class="link-box">
+                <button id="close"></button>
+                <a href="./index.html" class="nav_link lobby">Lobby</a>
+                <a href="./index.html#menu" class="nav_link menu">Menu</a>
+                <a href="#footer" class="nav_link about-us">About us</a>
+                <a href="./contacts.html" class="nav_link contacts">Contacts</a>
+                <a href="#lobby" class="nav_link sign-in">Sign in</a>
+            </div>
+        </nav>
+        <h1 class="main-title">SIGN INTO WEB-PLAZA</h1>
+    </header>
+
+    <main class="form">
+        <form action="/" class="myform">
+            <h2>Sign in</h2>
+            <div class="input_group">
+                <label for="username">Pseudonym</label>
+                <input type="text" name="username" id="username" placeholder="plasma2025" />
+            </div>
+            <div class="input_group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="enter password" />
+            </div>
+            <div class="input_group">
+                <textarea name="about_me" id="about_me" cols="40" rows="10"
+                    placeholder="Tell any fact about yourself"></textarea>
+            </div>
+            <div class="input_group">
+                <label>What's your gender?</label>
+                <div class="input_group_wrapper">
+                    <label class="input_inner">
+                        <input type="radio" name="gender" id="g1" value="male">
+                        <span class="neon-input"></span>
+                        Male
+                    </label>
+                    <label class="input_inner">
+                        <input type="radio" name="gender" id="g2" value="female">
+                        <span class="neon-input"></span>
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <label>Want to join web-plaza?</label>
+                <div class="input_group_wrapper">
+                    <label class="input_inner">
+                        <input type="radio" name="join" value="yes">
+                        <span class="neon-input"></span>
+                        Yes
+                    </label>
+                    <label class="input_inner">
+                        <input type="radio" name="join" value="no">
+                        <span class="neon-input"></span>
+                        No
+                    </label>
+                       
+                </div>
+            </div>
+            <div class="input_group">
+                <label for="part of the world">Choose your continent</label>
+                <select name="continent" id="continent" size="1">
+                    <option selected value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Africa">Africa</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            <div class="input_group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <div class="footer">
+            <h2 class="subtitle">Shawarma Plaza</h2>
+            <h3 class="rights">All rights reserved</h3>
+            <div class="credits">
+                <div class="organiser"><img src="./images/Morrison Academy pfp.png" class="organiser-img" alt="">
+                    Organiser - Morrison Academy
+                </div>
+                <div class="contributors">
+                    <div class="footer-card">Web-site creator - Daler <img src="./images/Aether Cube.jpg"
+                            class="footer-img" alt="Daler the Cube"></div>
+                    <div class="footer-card">Creating assist - Nurdaulet <img src="./images/Nurdaulet's pfp.jpg"
+                            class="footer-img" alt=""></div>
+                    <div class="footer-card">Creating support - Amir <img src="./images/Amir's pfp.jpg"
+                            class="footer-img" alt=""></div>
+                    <div class="footer-card">Planning help, logo - GPT <img src="./images/ChatGPT pfp.png"
+                            class="footer-img" alt=""></div>
+                    <div class="footer-card">Image-generating - Shedevrum <img src="./images/Shedevrum pfp.png"
+                            class="footer-img" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
